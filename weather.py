@@ -12,9 +12,11 @@ import urllib.request, urllib.error, urllib.parse
 from urllib.request import urlopen
 import json, time
 
+key = "YOUR_KEY_HERE"
+
 zipcode = input("What is your zip code?: ")
 zipcode = str(zipcode)
-url = str("http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&units=imperial")
+url = str("http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&units=imperial&APPID=" + key + "")
 
 result = urllib.request.urlopen(url)
 content = result.read()
