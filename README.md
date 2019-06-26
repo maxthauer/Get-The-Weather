@@ -1,4 +1,4 @@
-#Get-The-Weather
+# Get-The-Weather
 
 Find the current temperature using your zip code and the OpenWeatherMap API
 
